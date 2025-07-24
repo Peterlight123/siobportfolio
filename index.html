@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIOB MEDIA PORTFOLIO</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIOB MEDIA ACADEMY PORTFOLIO</title>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #efd6b3;
       color: #000;
     }
+
     .navbar {
       background-color: #122020;
     }
+
     .btn-custom {
       background-color: #ffc107;
       color: #000;
       border: none;
     }
+
     .btn-custom:hover {
       background-color: #e0a800;
     }
+
     .section-heading {
       color: #122020;
     }
-    footer {
-      background-color: #122020;
-      color: #fff;
-    }
+
     .highlight-box {
       border-left: 4px solid #ffc107;
       padding: 1rem;
       background-color: #f1f1f1;
       margin-bottom: 1rem;
     }
+
+    footer {
+      background-color: #122020;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- Navbar stuff-->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top animate__animated animate__fadeInDown">
   <div class="container">
     <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
       <img src="logo.jpg" alt="SIOB Logo" height="40" class="me-2">
-      SIOB MEDIA
+      SIOB MEDIA ACADEMY
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -65,7 +72,7 @@
   </div>
 </nav>
 
-<!-- Hero Section -->
+<!-- Home page stuff-->
 <section id="home" class="text-center py-5 animate__animated animate__fadeIn" style="background-color: #f5f5f5;">
   <div class="container">
     <h1 class="display-4 fw-bold animate__animated animate__zoomIn">Welcome to SIOB MEDIA</h1>
@@ -74,20 +81,30 @@
   </div>
 </section>
 
-<!-- About Section -->
+<!-- About side -->
 <section id="about" class="py-5 animate__animated animate__fadeInUp">
   <div class="container">
     <h2 class="section-heading text-center mb-4">About Me</h2>
-    <p class="text-center"> <!-- Insert a short bio here --> </p>
+    <p class="text-center"> <!-- TODO: Insert a short bio here later oo--> </p>
   </div>
 </section>
 
-<!-- Portfolio Section -->
+<!-- Portfolio side -->
 <section id="portfolio" class="py-5 bg-light animate__animated animate__fadeInUp">
   <div class="container">
     <h2 class="section-heading text-center mb-4">My Portfolio</h2>
     <div class="row">
-      <!-- Sample Project Cards will go here -->
+      <!-- Sample Project Cards -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="project1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Birthday flier</h5>
+            <p class="card-text">Nade a very good quick birthday Flier</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more cards as needed -->
     </div>
   </div>
 </section>
@@ -107,10 +124,35 @@
   <div class="container">
     <h2 class="section-heading text-center mb-4">Licenses & Certifications</h2>
     <ul class="list-group list-group-flush">
-<!--       <li class="list-group-item">Graphics Design Certificate – [Insert Platform or Institution]</li> -->
-<!--       <li class="list-group-item">Advanced Branding Training – [Insert Institution]</li> -->
+      <li class="list-group-item">Graphics Design Certificate – [Insert Platform or Institution]</li>
+      <li class="list-group-item">Advanced Branding Training – [Insert Institution]</li>
+      <li class="list-group-item">Creative Suite Masterclass – [Insert Platform]</li>
+    </ul>
+  </div>
+</section>
 
-      <!-- Footer -->
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5 animate__animated animate__fadeInUp">
+  <div class="container">
+    <h2 class="section-heading text-center mb-4">What Clients Say</h2>
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">“SIOB Media transformed my brand! Very professional and creative.”</p>
+      <footer class="blockquote-footer">Happy Client</footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light animate__animated animate__fadeInUp">
+  <div class="container text-center">
+    <h2 class="section-heading mb-4">Get in Touch</h2>
+    <p>Want a powerful brand or media solution?</p>
+    <a href="mailto:youremail@example.com" class="btn btn-custom me-2">Email Me</a>
+    <a href="https://wa.me/2348100000000" class="btn btn-success">WhatsApp</a>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer class="bg-dark text-white py-4 mt-5">
   <div class="container">
     <div class="row text-center text-md-start">
@@ -133,11 +175,11 @@
       </div>
     </div>
     <hr class="border-light">
-    <p class="text-center small mb-0">&copy; 2025 SIOB MEDIA. Designed by Peter lightspeed</p>
+    <p class="text-center small mb-0">&copy; 2025 SIOB MEDIA. Designed by Peter Lightspeed</p>
   </div>
 </footer>
 
-<!--       <li class="list-group-item">Creative Suite Masterclass – [Insert Platform]</li> -->
-    </ul>
-  </div>
-</section>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
